@@ -7,6 +7,7 @@
       "dependencies": {
         "@nine-thirty-five/material-symbols-react": "^1.25.1",
         "solid-js": "1.9.2",
+        "solid-primitives": "^0.0.1",
         "tailwind": "^4.0.0",
         "zebar": "^3.0.0",
       },
@@ -643,6 +644,8 @@
     "side-channel-weakmap": ["side-channel-weakmap@1.0.2", "", { "dependencies": { "call-bound": "^1.0.2", "es-errors": "^1.3.0", "get-intrinsic": "^1.2.5", "object-inspect": "^1.13.3", "side-channel-map": "^1.0.1" } }, "sha512-WPS/HvHQTYnHisLo9McqBHOJk2FkHO/tlpvldyrnem4aeQp4hai3gythswg6p01oSoTl58rcpiFAjF2br2Ak2A=="],
 
     "solid-js": ["solid-js@1.9.2", "", { "dependencies": { "csstype": "^3.1.0", "seroval": "^1.1.0", "seroval-plugins": "^1.1.0" } }, "sha512-fe/K03nV+kMFJYhAOE8AIQHcGxB4rMIEoEyrulbtmf217NffbbwBqJnJI4ovt16e+kaIt0czE2WA7mP/pYN9yg=="],
+
+    "solid-primitives": ["solid-primitives@0.0.1", "", {}, "sha512-ehBfTMDXw8zxv77r1nH/YWKgVHs02gTjMHDkfegeA9W5zgJJip8HNGHD3X0hLLpkvlhNjQA7TkCldzNkD4fJTw=="],
 
     "solid-refresh": ["solid-refresh@0.6.3", "", { "dependencies": { "@babel/generator": "^7.23.6", "@babel/helper-module-imports": "^7.22.15", "@babel/types": "^7.23.6" }, "peerDependencies": { "solid-js": "^1.3" } }, "sha512-F3aPsX6hVw9ttm5LYlth8Q15x6MlI/J3Dn+o3EQyRTtTxidepSTwAYdozt01/YA+7ObcciagGEyXIopGZzQtbA=="],
 

@@ -8,7 +8,9 @@
   },
   "dependencies": {
     "@nine-thirty-five/material-symbols-react": "^1.25.1",
+    "@solid-primitives/media": "^2.3.5",
     "solid-js": "1.9.2",
+    "solid-primitives": "^0.0.1",
     "tailwind": "^4.0.0",
     "zebar": "^3.0.0"
   },

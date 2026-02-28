@@ -2,12 +2,13 @@ import './index.css';
 import {For, render} from 'solid-js/web';
 import {createStore} from 'solid-js/store';
 import * as zebar from 'zebar';
-import AudioIcon from "./components/icons/AudioIcon";
+import { createPrefersDark } from "@solid-primitives/media";
 import CpuIcon from "./components/icons/CpuIcon";
 import MemoryIcon from "./components/icons/MemoryIcon";
 import {getWeatherName, WeatherIcon} from "./components/icons/WeatherIcon";
 import ClockIcon from "./components/icons/ClockIcon";
 import {VolumeIcon} from "./components/icons/VolumeIcon";
+import {createEffect} from "solid-js";
 
 const providers = zebar.createProviderGroup({
     audio: {type: 'audio'},
@@ -23,9 +24,17 @@ const providers = zebar.createProviderGroup({
 
 render(() => <App/>, document.getElementById('root')!);
 
-
 function App() {
     const [output, setOutput] = createStore(providers.outputMap);
+    const isDark = createPrefersDark();
+
+    createEffect(() => {
+        if (isDark()) {
+            document.body.classList.remove("light");
+        } else {
+            document.body.classList.add("light");
+        }
+    });
 
     function checkWorkspace(workspace: any): boolean {
         return output.glazewm?.focusedWorkspace == workspace;
@@ -56,7 +65,7 @@ function App() {
                     <div class="flex-fill anchor-centre spacing-10">
                         <div class="debug group-container anchor-centre extra-padding">
                             <WeatherIcon status={output.weather.status}/>
-                            <p class="pad-5-lr">{getWeatherName(output.weather.status)}</p>
+                            <p class="pad-5-lr">{getWeatherName(output.weather.status)} {isDark} </p>
                         </div>
                         <div class="debug group-container anchor-centre extra-padding">
                             <ClockIcon/>

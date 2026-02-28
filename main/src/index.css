@@ -1,10 +1,23 @@
+:root {
+  --bg-main: #0d1017;
+  --text-main: #ffd4e6;
+  --accent: #ff92c2;
+  --workspace-bg: #ff92c2;
+}
+
+.light {
+    --bg-main: #ffeef4;
+    --text-main: #000000;
+    --accent: #ed81b0;
+    --workspace-bg: #ed81b0;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* Equivalent to a basic Container */
 .container {
   position: relative;
   display: block;
@@ -100,7 +113,7 @@
 }
 
 body {
-  color: #ffd4e6;
+  color: var(--text-main);
   font-family: "JetBrains Mono", monospace;
   font-size: 12px;
   overflow: hidden;
@@ -114,7 +127,7 @@ body {
 }
 
 .group-container {
-  background-color: #0d1017;
+  background-color: var(--bg-main);
   border-radius: 9999px;
   padding: 5px;
 }
@@ -136,22 +149,15 @@ body {
 
 svg path {
   transform: translateY(1px);
-  fill: #ff92c2;
+  fill: var(--accent);
 }
 
 .workspace-active {
-  background-color: #ff92c2;
-  color: #0d1017;
+  background-color: var(--workspace-bg);
+  color: var(--bg-main);
   border-radius: 100%;
   font-size: 24px;
 }
-
-.debug {
-  border-color: red;
-  /*border-style: solid;*/
-  border-width: 1px;
-}
-
 
 html,
 body,

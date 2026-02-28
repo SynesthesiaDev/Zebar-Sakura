@@ -23,14 +23,14 @@ const WEATHER_MAP_ICON: Record<WeatherStatus, JSX.Element> = {
 const WEATHER_MAP_NAME: Record<WeatherStatus, string> = {
     cloudy_day: "Cloudy Day",
     cloudy_night: "Cloudy Night",
-    heavy_rain_day: "Heavy Rain Day",
-    heavy_rain_night: "Heavy Rain Night",
-    light_rain_day: "Light Rain Day",
-    light_rain_night: "Light Rain Night",
-    snow_day: "Snowing Day",
-    snow_night: "Snowing Night",
-    thunder_day: "Thunderstorm Day",
-    thunder_night: "Thunderstorm Night",
+    heavy_rain_day: "Rainy Day",
+    heavy_rain_night: "Rainy Night",
+    light_rain_day: "Slightly Rainy Day",
+    light_rain_night: "Slightly Rainy Night",
+    snow_day: "Snowy Day",
+    snow_night: "Snowy Night",
+    thunder_day: "Stormy Day",
+    thunder_night: "Stormy Night",
     clear_day: "Clear Day",
     clear_night: "Clear Night"
 };
